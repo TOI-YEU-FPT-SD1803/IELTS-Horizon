@@ -1,4 +1,5 @@
 # IELTS Horizon
-SOF102
 
-Remember, apply English for fully course
+A real project for SOF102
+
+Remember, apply English to the entire Project
