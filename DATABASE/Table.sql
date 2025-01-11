@@ -1,144 +1,157 @@
--- Bảng Administrators: Quản lý tài khoản quản trị viên
+
+-- Bảng Administrators
 CREATE TABLE Administrators (
-    AdministratorID INT PRIMARY KEY AUTO_INCREMENT,
-    Fullname VARCHAR(100) NOT NULL,
-    Email VARCHAR(100) UNIQUE NOT NULL,
-    PhoneNumber VARCHAR(100),
-    Username VARCHAR(100) UNIQUE NOT NULL,
-    Password VARCHAR(100) NOT NULL,
-    Status ENUM('Active', 'Inactive') DEFAULT 'Active',
-    RegistrationDate TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    AdministratorID INT IDENTITY(1,1) PRIMARY KEY,
+    Fullname NVARCHAR(100) NOT NULL,
+    Email NVARCHAR(100) UNIQUE NOT NULL,
+    PhoneNumber NVARCHAR(100),
+    Username NVARCHAR(100) UNIQUE NOT NULL,
+    Password NVARCHAR(100) NOT NULL,
+    Status NVARCHAR(10) DEFAULT 'Active' CHECK (Status IN ('Active', 'Inactive')),
+    RegistrationDate DATETIME DEFAULT GETDATE()
 );
+GO
 
--- Bảng Teachers: Quản lý tài khoản giáo viên
+-- Bảng Teachers
 CREATE TABLE Teachers (
-    TeacherID INT PRIMARY KEY AUTO_INCREMENT,
-    Fullname VARCHAR(100) NOT NULL,
-    Email VARCHAR(100) UNIQUE NOT NULL,
-    PhoneNumber VARCHAR(100),
-    Username VARCHAR(100) UNIQUE NOT NULL,
-    Password VARCHAR(100) NOT NULL,
-    Specialty VARCHAR(100),
+    TeacherID INT IDENTITY(1,1) PRIMARY KEY,
+    Fullname NVARCHAR(100) NOT NULL,
+    Email NVARCHAR(100) UNIQUE NOT NULL,
+    PhoneNumber NVARCHAR(100),
+    Username NVARCHAR(100) UNIQUE NOT NULL,
+    Password NVARCHAR(100) NOT NULL,
+    Specialty NVARCHAR(100),
     PublishedCourses INT DEFAULT 0,
-    StreamHours DOUBLE DEFAULT 0,
-    Rated DOUBLE DEFAULT 0,
-    Status ENUM('Active', 'Inactive') DEFAULT 'Active',
-    RegistrationDate TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    StreamHours FLOAT DEFAULT 0,
+    Rated FLOAT DEFAULT 0,
+    Status NVARCHAR(10) DEFAULT 'Active' CHECK (Status IN ('Active', 'Inactive')),
+    RegistrationDate DATETIME DEFAULT GETDATE()
 );
+GO
 
--- Bảng Students: Quản lý tài khoản học viên
+-- Bảng Students
 CREATE TABLE Students (
-    StudentID INT PRIMARY KEY AUTO_INCREMENT,
-    Fullname VARCHAR(100) NOT NULL,
-    Email VARCHAR(100) UNIQUE NOT NULL,
-    PhoneNumber VARCHAR(100),
-    Username VARCHAR(100) UNIQUE NOT NULL,
-    Password VARCHAR(100) NOT NULL,
+    StudentID INT IDENTITY(1,1) PRIMARY KEY,
+    Fullname NVARCHAR(100) NOT NULL,
+    Email NVARCHAR(100) UNIQUE NOT NULL,
+    PhoneNumber NVARCHAR(100),
+    Username NVARCHAR(100) UNIQUE NOT NULL,
+    Password NVARCHAR(100) NOT NULL,
     EnrolledCourses INT DEFAULT 0,
-    StudyHours DOUBLE DEFAULT 0,
-    Status ENUM('Active', 'Inactive') DEFAULT 'Active',
-    RegistrationDate TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    StudyHours FLOAT DEFAULT 0,
+    Status NVARCHAR(10) DEFAULT 'Active' CHECK (Status IN ('Active', 'Inactive')),
+    RegistrationDate DATETIME DEFAULT GETDATE()
 );
+GO
 
--- Bảng Courses: Quản lý khóa học
+-- Bảng Courses
 CREATE TABLE Courses (
-    CourseID INT PRIMARY KEY AUTO_INCREMENT,
-    Title VARCHAR(255) NOT NULL,
-    Description TEXT,
+    CourseID INT IDENTITY(1,1) PRIMARY KEY,
+    Title NVARCHAR(255) NOT NULL,
+    Description NVARCHAR(MAX),
     TeacherID INT,
-    Status ENUM('Uploaded', 'Draft') DEFAULT 'Draft',
-    Rated DOUBLE DEFAULT 0,
-    PublishedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    Status NVARCHAR(10) DEFAULT 'Draft' CHECK (Status IN ('Uploaded', 'Draft')),
+    Rated FLOAT DEFAULT 0,
+    PublishedAt DATETIME DEFAULT GETDATE(),
     FOREIGN KEY (TeacherID) REFERENCES Teachers(TeacherID)
 );
+GO
 
--- Bảng Enrollments: Quản lý đăng ký khóa học của học viên
+-- Bảng Enrollments
 CREATE TABLE Enrollments (
-    EnrollmentID INT PRIMARY KEY AUTO_INCREMENT,
+    EnrollmentID INT IDENTITY(1,1) PRIMARY KEY,
     StudentID INT,
     CourseID INT,
-    EnrollmentDate TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    Status ENUM('Active', 'Completed', 'Cancelled') DEFAULT 'Active',
+    EnrollmentDate DATETIME DEFAULT GETDATE(),
+    Status NVARCHAR(20) DEFAULT 'Active' CHECK (Status IN ('Active', 'Completed', 'Cancelled')),
     FOREIGN KEY (StudentID) REFERENCES Students(StudentID),
     FOREIGN KEY (CourseID) REFERENCES Courses(CourseID)
 );
+GO
 
--- Bảng Assignments: Quản lý bài tập cho khóa học
+-- Bảng Assignments
 CREATE TABLE Assignments (
-    AssignmentID INT PRIMARY KEY AUTO_INCREMENT,
+    AssignmentID INT IDENTITY(1,1) PRIMARY KEY,
     CourseID INT,
-    Title VARCHAR(255) NOT NULL,
-    Description TEXT,
-    DueTime TIMESTAMP,
+    Title NVARCHAR(255) NOT NULL,
+    Description NVARCHAR(MAX),
+    DueTime DATETIME,
     FOREIGN KEY (CourseID) REFERENCES Courses(CourseID)
 );
+GO
 
--- Bảng Submissions: Quản lý bài làm học viên
+-- Bảng Submissions
 CREATE TABLE Submissions (
-    SubmissionID INT PRIMARY KEY AUTO_INCREMENT,
+    SubmissionID INT IDENTITY(1,1) PRIMARY KEY,
     AssignmentID INT,
     StudentID INT,
-    SubmissionDate TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    Grade DOUBLE,
-    Note TEXT,
+    SubmissionDate DATETIME DEFAULT GETDATE(),
+    Grade FLOAT,
+    Note NVARCHAR(MAX),
     FOREIGN KEY (AssignmentID) REFERENCES Assignments(AssignmentID),
     FOREIGN KEY (StudentID) REFERENCES Students(StudentID)
 );
+GO
 
--- Bảng Payments: Quản lý thanh toán học phí
+-- Bảng Payments
 CREATE TABLE Payments (
-    PaymentID INT PRIMARY KEY AUTO_INCREMENT,
+    PaymentID INT IDENTITY(1,1) PRIMARY KEY,
     StudentID INT,
     CourseID INT,
-    Amount DOUBLE,
-    PaymentDate TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    Status ENUM('Paid', 'Pending', 'Failed') DEFAULT 'Pending',
+    Amount FLOAT,
+    PaymentDate DATETIME DEFAULT GETDATE(),
+    Status NVARCHAR(10) DEFAULT 'Pending' CHECK (Status IN ('Paid', 'Pending', 'Failed')),
     FOREIGN KEY (StudentID) REFERENCES Students(StudentID),
     FOREIGN KEY (CourseID) REFERENCES Courses(CourseID)
 );
+GO
 
--- Bảng CourseReviews: Học viên đánh giá khóa học
+-- Bảng CourseReviews
 CREATE TABLE CourseReviews (
-    ReviewID INT PRIMARY KEY AUTO_INCREMENT,
+    ReviewID INT IDENTITY(1,1) PRIMARY KEY,
     CourseID INT,
     StudentID INT,
-    Rating ENUM('1', '2', '3', '4', '5') NOT NULL,
-    Comment TEXT,
-    ReviewDate TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    Rating INT CHECK (Rating BETWEEN 1 AND 5),
+    Comment NVARCHAR(MAX),
+    ReviewDate DATETIME DEFAULT GETDATE(),
     FOREIGN KEY (CourseID) REFERENCES Courses(CourseID),
     FOREIGN KEY (StudentID) REFERENCES Students(StudentID)
 );
+GO
 
--- Bảng TeacherReviews: Học viên đánh giá giáo viên
+-- Bảng TeacherReviews
 CREATE TABLE TeacherReviews (
-    ReviewID INT PRIMARY KEY AUTO_INCREMENT,
+    ReviewID INT IDENTITY(1,1) PRIMARY KEY,
     TeacherID INT,
     StudentID INT,
-    Rating ENUM('1', '2', '3', '4', '5') NOT NULL,
-    Comment TEXT,
-    ReviewDate TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    Rating INT CHECK (Rating BETWEEN 1 AND 5),
+    Comment NVARCHAR(MAX),
+    ReviewDate DATETIME DEFAULT GETDATE(),
     FOREIGN KEY (TeacherID) REFERENCES Teachers(TeacherID),
     FOREIGN KEY (StudentID) REFERENCES Students(StudentID)
 );
+GO
 
--- Bảng Notifications: Gửi thông báo đến người dùng
+-- Bảng Notifications
 CREATE TABLE Notifications (
-    NotificationID INT PRIMARY KEY AUTO_INCREMENT,
+    NotificationID INT IDENTITY(1,1) PRIMARY KEY,
     UserID INT,
-    UserType ENUM('Student', 'Teacher', 'Administrator') NOT NULL,
-    Title VARCHAR(100) NOT NULL,
-    Message TEXT,
-    IsRead BOOLEAN DEFAULT FALSE,
-    CreatedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    UserType NVARCHAR(50) NOT NULL,
+    Title NVARCHAR(100) NOT NULL,
+    Message NVARCHAR(MAX),
+    IsRead BIT DEFAULT 0,
+    CreatedAt DATETIME DEFAULT GETDATE()
 );
+GO
 
--- Bảng Certificates: Quản lý chứng chỉ hoàn thành khóa học
+-- Bảng Certificates
 CREATE TABLE Certificates (
-    CertificateID INT PRIMARY KEY AUTO_INCREMENT,
+    CertificateID INT IDENTITY(1,1) PRIMARY KEY,
     StudentID INT,
     CourseID INT,
-    IssueDate TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    CertificateURL VARCHAR(255),
+    IssueDate DATETIME DEFAULT GETDATE(),
+    CertificateURL NVARCHAR(255),
     FOREIGN KEY (StudentID) REFERENCES Students(StudentID),
     FOREIGN KEY (CourseID) REFERENCES Courses(CourseID)
 );
+GO
