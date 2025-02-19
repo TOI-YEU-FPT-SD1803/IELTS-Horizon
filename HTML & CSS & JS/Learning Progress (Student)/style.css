@@ -1,0 +1,14 @@
+.learning-progress {
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.learning-progress .div {
+  background-image: url(https://c.animaapp.com/OZhz6FiD/img/learning-progress--student-@4x.png);
+  background-size: 100% 100%;
+  width: 2000px;
+  height: 1862px;
+}

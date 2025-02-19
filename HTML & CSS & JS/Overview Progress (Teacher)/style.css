@@ -1,0 +1,23 @@
+.overview-progress {
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.overview-progress .group-wrapper {
+  background-image: url(https://c.animaapp.com/kxliA39g/img/group-98.png);
+  background-size: 100% 100%;
+  width: 2000px;
+  height: 1784px;
+  position: relative;
+}
+
+.overview-progress .group {
+  position: absolute;
+  width: 216px;
+  height: 110px;
+  top: 319px;
+  left: 1278px;
+}

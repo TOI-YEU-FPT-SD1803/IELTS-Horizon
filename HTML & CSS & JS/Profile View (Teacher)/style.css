@@ -1,0 +1,593 @@
+.profile-view-teacher {
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.profile-view-teacher .div {
+  background-image: url(https://c.animaapp.com/zhyMWhWY/img/group-88.png);
+  background-size: 100% 100%;
+  width: 2000px;
+  height: 2400px;
+  position: relative;
+}
+
+.profile-view-teacher .group {
+  position: absolute;
+  width: 2000px;
+  height: 662px;
+  top: 1738px;
+  left: 0;
+  background-color: #eefafc;
+}
+
+.profile-view-teacher .overlap-wrapper {
+  position: relative;
+  width: 1583px;
+  height: 475px;
+  top: 93px;
+  left: 236px;
+}
+
+.profile-view-teacher .overlap {
+  position: relative;
+  width: 1585px;
+  height: 475px;
+}
+
+.profile-view-teacher .group-2 {
+  position: absolute;
+  width: 1585px;
+  height: 475px;
+  top: 0;
+  left: 0;
+}
+
+.profile-view-teacher .overlap-group-wrapper {
+  position: absolute;
+  width: 313px;
+  height: 77px;
+  top: 0;
+  left: 1192px;
+}
+
+.profile-view-teacher .overlap-group {
+  position: relative;
+  width: 309px;
+  height: 77px;
+}
+
+.profile-view-teacher .text-wrapper {
+  position: absolute;
+  width: 143px;
+  height: 52px;
+  top: 25px;
+  left: 0;
+  font-family: "Inter", Helvetica;
+  font-weight: 800;
+  color: #e44646;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.profile-view-teacher .text-wrapper-2 {
+  position: absolute;
+  width: 309px;
+  height: 68px;
+  top: 0;
+  left: 0;
+  font-family: "Inter", Helvetica;
+  font-weight: 800;
+  color: #6cd4e5;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.profile-view-teacher .TP-h-n-i-c-u-gi-wrapper {
+  position: absolute;
+  width: 393px;
+  height: 144px;
+  top: 88px;
+  left: 1192px;
+}
+
+.profile-view-teacher .TP-h-n-i-c-u-gi {
+  position: absolute;
+  width: 391px;
+  height: 144px;
+  top: 0;
+  left: 0;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: 36px;
+}
+
+.profile-view-teacher .span {
+  font-weight: 700;
+}
+
+.profile-view-teacher .text-wrapper-3 {
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: 36px;
+}
+
+.profile-view-teacher .div-wrapper {
+  position: absolute;
+  width: 313px;
+  height: 77px;
+  top: 280px;
+  left: 587px;
+}
+
+.profile-view-teacher .kh-a-h-c-luy-n-thi-wrapper {
+  position: absolute;
+  width: 629px;
+  height: 108px;
+  top: 367px;
+  left: 587px;
+}
+
+.profile-view-teacher .kh-a-h-c-luy-n-thi {
+  position: absolute;
+  width: 627px;
+  height: 108px;
+  top: 0;
+  left: 0;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: 36px;
+}
+
+.profile-view-teacher .group-3 {
+  position: absolute;
+  width: 313px;
+  height: 77px;
+  top: 0;
+  left: 591px;
+}
+
+.profile-view-teacher .v-IELTS-horizon-thi-wrapper {
+  position: absolute;
+  width: 410px;
+  height: 180px;
+  top: 88px;
+  left: 591px;
+}
+
+.profile-view-teacher .v-IELTS-horizon-thi {
+  position: absolute;
+  width: 408px;
+  height: 180px;
+  top: 0;
+  left: 0;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: 36px;
+}
+
+.profile-view-teacher .IELTS-HORIZON {
+  position: absolute;
+  width: 366px;
+  height: 139px;
+  top: 0;
+  left: 0;
+  font-family: "Inter", Helvetica;
+  font-weight: 800;
+  color: #000000;
+  font-size: 48px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.profile-view-teacher .email-tete-wrapper {
+  position: absolute;
+  width: 383px;
+  height: 72px;
+  top: 367px;
+  left: 0;
+}
+
+.profile-view-teacher .email-tete {
+  position: absolute;
+  height: 72px;
+  top: 0;
+  left: 0;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: 36px;
+}
+
+.profile-view-teacher .group-wrapper {
+  position: absolute;
+  width: 223px;
+  height: 200px;
+  top: 148px;
+  left: 0;
+}
+
+.profile-view-teacher .group-4 {
+  position: relative;
+  height: 200px;
+}
+
+.profile-view-teacher .group-5 {
+  position: absolute;
+  width: 199px;
+  height: 43px;
+  top: 0;
+  left: 17px;
+}
+
+.profile-view-teacher .facebook {
+  position: absolute;
+  width: 43px;
+  height: 43px;
+  top: 0;
+  left: 0;
+}
+
+.profile-view-teacher .twitter-circled {
+  position: absolute;
+  width: 43px;
+  height: 43px;
+  top: 0;
+  left: 52px;
+}
+
+.profile-view-teacher .you-tube {
+  position: absolute;
+  width: 43px;
+  height: 43px;
+  top: 0;
+  left: 104px;
+}
+
+.profile-view-teacher .linkedin-circled {
+  position: absolute;
+  width: 43px;
+  height: 43px;
+  top: 0;
+  left: 156px;
+}
+
+.profile-view-teacher .group-6 {
+  position: absolute;
+  width: 227px;
+  height: 77px;
+  top: 123px;
+  left: 0;
+}
+
+.profile-view-teacher .overlap-group-2 {
+  position: relative;
+  width: 223px;
+  height: 77px;
+}
+
+.profile-view-teacher .text-wrapper-4 {
+  width: 103px;
+  height: 52px;
+  top: 25px;
+  left: 0;
+  font-weight: 800;
+  color: #e44646;
+  font-size: 24px;
+  position: absolute;
+  font-family: "Inter", Helvetica;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.profile-view-teacher .text-wrapper-5 {
+  position: absolute;
+  width: 223px;
+  height: 68px;
+  top: 0;
+  left: 0;
+  font-family: "Inter", Helvetica;
+  font-weight: 800;
+  color: #6cd4e5;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.profile-view-teacher .group-7 {
+  position: absolute;
+  width: 357px;
+  height: 239px;
+  top: 229px;
+  left: 113px;
+}
+
+.profile-view-teacher .overlap-2 {
+  position: relative;
+  width: 367px;
+  height: 239px;
+}
+
+.profile-view-teacher .rectangle {
+  position: absolute;
+  width: 334px;
+  height: 239px;
+  top: 0;
+  left: 0;
+  background-color: #eaf6f9;
+}
+
+.profile-view-teacher .group-8 {
+  position: absolute;
+  width: 342px;
+  height: 190px;
+  top: 23px;
+  left: 25px;
+}
+
+.profile-view-teacher .stop {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 43px;
+  left: 0;
+}
+
+.profile-view-teacher .stop-wrapper {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 0;
+  left: 0;
+  background-image: url(https://c.animaapp.com/zhyMWhWY/img/stop-3@2x.png);
+  background-size: 100% 100%;
+}
+
+.profile-view-teacher .img {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 8px;
+  left: 8px;
+}
+
+.profile-view-teacher .text-wrapper-6 {
+  position: absolute;
+  width: 190px;
+  top: 11px;
+  left: 65px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.profile-view-teacher .text-wrapper-7 {
+  position: absolute;
+  width: 150px;
+  top: 51px;
+  left: 65px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.profile-view-teacher .text-wrapper-8 {
+  position: absolute;
+  width: 107px;
+  top: 159px;
+  left: 66px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.profile-view-teacher .overlap-3 {
+  position: absolute;
+  width: 332px;
+  height: 64px;
+  top: 85px;
+  left: 0;
+}
+
+.profile-view-teacher .overlap-group-3 {
+  position: absolute;
+  width: 332px;
+  height: 64px;
+  top: 0;
+  left: 0;
+}
+
+.profile-view-teacher .text-wrapper-9 {
+  width: 324px;
+  top: 38px;
+  left: 8px;
+  font-weight: 100;
+  color: #000000;
+  font-size: 16px;
+  position: absolute;
+  font-family: "Inter", Helvetica;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.profile-view-teacher .stop-2 {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 0;
+  left: 0;
+}
+
+.profile-view-teacher .text-wrapper-10 {
+  position: absolute;
+  width: 151px;
+  top: 7px;
+  left: 65px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.profile-view-teacher .logout-rounded {
+  position: absolute;
+  width: 25px;
+  height: 39px;
+  top: 151px;
+  left: 8px;
+}
+
+.profile-view-teacher .group-9 {
+  position: absolute;
+  width: 988px;
+  height: 255px;
+  top: 1286px;
+  left: 873px;
+}
+
+.profile-view-teacher .text-wrapper-11 {
+  top: 0;
+  left: 12px;
+  font-weight: 100;
+  color: #000000;
+  font-size: 16px;
+  white-space: nowrap;
+  position: absolute;
+  font-family: "Inter", Helvetica;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.profile-view-teacher .text-wrapper-12 {
+  position: absolute;
+  top: 63px;
+  left: 0;
+  font-family: "Inter", Helvetica;
+  font-weight: 600;
+  color: #000000;
+  font-size: 40px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.profile-view-teacher .text-wrapper-13 {
+  position: absolute;
+  top: 135px;
+  left: 539px;
+  font-family: "Inter", Helvetica;
+  font-weight: 600;
+  color: #115560;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.profile-view-teacher .group-10 {
+  position: absolute;
+  width: 455px;
+  height: 78px;
+  top: 177px;
+  left: 529px;
+}
+
+.profile-view-teacher .overlap-group-4 {
+  position: relative;
+  width: 453px;
+  height: 78px;
+  background-color: #f2f2f2;
+  border-radius: var(--shape-corner-small);
+}
+
+.profile-view-teacher .c-c-kh-a-h-c {
+  position: absolute;
+  width: 298px;
+  height: 46px;
+  top: 16px;
+  left: 20px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #115560;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.profile-view-teacher .group-11 {
+  position: absolute;
+  width: 455px;
+  height: 120px;
+  top: 135px;
+  left: 0;
+}
+
+.profile-view-teacher .text-wrapper-14 {
+  position: absolute;
+  top: 0;
+  left: 10px;
+  font-family: "Inter", Helvetica;
+  font-weight: 600;
+  color: #115560;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.profile-view-teacher .group-12 {
+  position: absolute;
+  width: 455px;
+  height: 78px;
+  top: 42px;
+  left: 0;
+}
+
+.profile-view-teacher .expand-arrow {
+  position: absolute;
+  width: 21px;
+  height: 21px;
+  top: 28px;
+  left: 405px;
+}
+
+.profile-view-teacher .p {
+  position: absolute;
+  width: 298px;
+  height: 46px;
+  top: 17px;
+  left: 39px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #115560;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}

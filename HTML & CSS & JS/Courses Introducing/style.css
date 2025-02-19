@@ -1,0 +1,24 @@
+.courses-introducing {
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .courses-introducing .following-wrapper {
+    background-image: url(https://c.animaapp.com/bMwBvBEL/img/courses-introducing.png);
+    background-size: 100% 100%;
+    width: 2007px;
+    height: 5749px;
+    position: relative;
+  }
+  
+  .courses-introducing .following {
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    top: 2823px;
+    left: 211px;
+  }
+  

@@ -1,0 +1,515 @@
+.courses-management {
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.courses-management .div {
+  overflow: hidden;
+  background-image: url(https://c.animaapp.com/us4TBGiA/img/rectangle-29.png);
+  background-size: 100% 100%;
+  width: 2000px;
+  height: 1784px;
+  position: relative;
+}
+
+.courses-management .group {
+  position: absolute;
+  width: 647px;
+  height: 242px;
+  top: 229px;
+  left: 597px;
+}
+
+.courses-management .overlap-group-wrapper {
+  position: absolute;
+  width: 2002px;
+  height: 127px;
+  top: 0;
+  left: 0;
+}
+
+.courses-management .overlap-group {
+  position: relative;
+  width: 2000px;
+  height: 127px;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 4px #00000040;
+}
+
+.courses-management .text-wrapper {
+  position: absolute;
+  width: 227px;
+  height: 114px;
+  top: 10px;
+  left: 185px;
+  font-family: "Inter", Helvetica;
+  font-weight: 800;
+  color: #000000;
+  font-size: 36px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.courses-management .navbar {
+  position: absolute;
+  width: 1006px;
+  height: 24px;
+  top: 48px;
+  left: 465px;
+}
+
+.courses-management .text-wrapper-2 {
+  position: absolute;
+  height: 24px;
+  top: 0;
+  left: 0;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #115560;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.courses-management .text-wrapper-3 {
+  position: absolute;
+  height: 24px;
+  top: 0;
+  left: 228px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #115560;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.courses-management .text-wrapper-4 {
+  position: absolute;
+  height: 24px;
+  top: 0;
+  left: 822px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #115560;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.courses-management .text-wrapper-5 {
+  position: absolute;
+  height: 24px;
+  top: 0;
+  left: 427px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #115560;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.courses-management .text-wrapper-6 {
+  position: absolute;
+  height: 24px;
+  top: 0;
+  left: 620px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #115560;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.courses-management .expand-arrow {
+  position: absolute;
+  width: 25px;
+  height: 12px;
+  top: 7px;
+  left: 552px;
+}
+
+.courses-management .img {
+  position: absolute;
+  width: 25px;
+  height: 12px;
+  top: 7px;
+  left: 359px;
+}
+
+.courses-management .expand-arrow-2 {
+  position: absolute;
+  width: 25px;
+  height: 12px;
+  top: 7px;
+  left: 754px;
+}
+
+.courses-management .expand-arrow-3 {
+  position: absolute;
+  width: 25px;
+  height: 12px;
+  top: 6px;
+  left: 971px;
+}
+
+.courses-management .group-2 {
+  position: absolute;
+  width: 226px;
+  height: 52px;
+  top: 35px;
+  left: 1569px;
+}
+
+.courses-management .expand-arrow-4 {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 20px;
+  left: 208px;
+}
+
+.courses-management .text-wrapper-7 {
+  position: absolute;
+  top: 14px;
+  left: 65px;
+  font-family: "Inter", Helvetica;
+  font-weight: 600;
+  color: #000000;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.courses-management .male-user {
+  position: absolute;
+  width: 52px;
+  height: 52px;
+  top: 0;
+  left: 0;
+}
+
+.courses-management .doorbell {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 48px;
+  left: 1825px;
+}
+
+.courses-management .group-wrapper {
+  position: absolute;
+  width: 2000px;
+  height: 662px;
+  top: 1122px;
+  left: 0;
+  background-color: #eefafc;
+}
+
+.courses-management .overlap-wrapper {
+  position: relative;
+  width: 1583px;
+  height: 475px;
+  top: 93px;
+  left: 280px;
+}
+
+.courses-management .overlap {
+  position: relative;
+  width: 1585px;
+  height: 475px;
+}
+
+.courses-management .group-3 {
+  position: absolute;
+  width: 1585px;
+  height: 475px;
+  top: 0;
+  left: 0;
+}
+
+.courses-management .div-wrapper {
+  position: absolute;
+  width: 313px;
+  height: 77px;
+  top: 0;
+  left: 1192px;
+}
+
+.courses-management .overlap-group-2 {
+  position: relative;
+  width: 309px;
+  height: 77px;
+}
+
+.courses-management .text-wrapper-8 {
+  position: absolute;
+  width: 143px;
+  height: 52px;
+  top: 25px;
+  left: 0;
+  font-family: "Inter", Helvetica;
+  font-weight: 800;
+  color: #e44646;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.courses-management .text-wrapper-9 {
+  position: absolute;
+  width: 309px;
+  height: 68px;
+  top: 0;
+  left: 0;
+  font-family: "Inter", Helvetica;
+  font-weight: 800;
+  color: #6cd4e5;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.courses-management .TP-h-n-i-c-u-gi-wrapper {
+  position: absolute;
+  width: 393px;
+  height: 144px;
+  top: 88px;
+  left: 1192px;
+}
+
+.courses-management .TP-h-n-i-c-u-gi {
+  position: absolute;
+  width: 391px;
+  height: 144px;
+  top: 0;
+  left: 0;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: 36px;
+}
+
+.courses-management .span {
+  font-weight: 700;
+}
+
+.courses-management .text-wrapper-10 {
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: 36px;
+}
+
+.courses-management .group-4 {
+  position: absolute;
+  width: 313px;
+  height: 77px;
+  top: 280px;
+  left: 587px;
+}
+
+.courses-management .kh-a-h-c-luy-n-thi-wrapper {
+  position: absolute;
+  width: 629px;
+  height: 108px;
+  top: 367px;
+  left: 587px;
+}
+
+.courses-management .kh-a-h-c-luy-n-thi {
+  position: absolute;
+  width: 627px;
+  height: 108px;
+  top: 0;
+  left: 0;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: 36px;
+}
+
+.courses-management .group-5 {
+  position: absolute;
+  width: 313px;
+  height: 77px;
+  top: 0;
+  left: 591px;
+}
+
+.courses-management .v-IELTS-horizon-thi-wrapper {
+  position: absolute;
+  width: 410px;
+  height: 180px;
+  top: 88px;
+  left: 591px;
+}
+
+.courses-management .v-IELTS-horizon-thi {
+  position: absolute;
+  width: 408px;
+  height: 180px;
+  top: 0;
+  left: 0;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: 36px;
+}
+
+.courses-management .IELTS-HORIZON {
+  position: absolute;
+  width: 366px;
+  height: 139px;
+  top: 0;
+  left: 0;
+  font-family: "Inter", Helvetica;
+  font-weight: 800;
+  color: #000000;
+  font-size: 48px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.courses-management .email-tete-wrapper {
+  position: absolute;
+  width: 383px;
+  height: 72px;
+  top: 367px;
+  left: 0;
+}
+
+.courses-management .email-tete {
+  position: absolute;
+  height: 72px;
+  top: 0;
+  left: 0;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: 36px;
+}
+
+.courses-management .group-6 {
+  position: absolute;
+  width: 223px;
+  height: 200px;
+  top: 157px;
+  left: 0;
+}
+
+.courses-management .group-7 {
+  position: relative;
+  height: 200px;
+}
+
+.courses-management .group-8 {
+  position: absolute;
+  width: 199px;
+  height: 43px;
+  top: 0;
+  left: 17px;
+}
+
+.courses-management .facebook {
+  position: absolute;
+  width: 43px;
+  height: 43px;
+  top: 0;
+  left: 0;
+}
+
+.courses-management .twitter-circled {
+  position: absolute;
+  width: 43px;
+  height: 43px;
+  top: 0;
+  left: 52px;
+}
+
+.courses-management .you-tube {
+  position: absolute;
+  width: 43px;
+  height: 43px;
+  top: 0;
+  left: 104px;
+}
+
+.courses-management .linkedin-circled {
+  position: absolute;
+  width: 43px;
+  height: 43px;
+  top: 0;
+  left: 156px;
+}
+
+.courses-management .group-9 {
+  position: absolute;
+  width: 227px;
+  height: 77px;
+  top: 123px;
+  left: 0;
+}
+
+.courses-management .overlap-group-3 {
+  position: relative;
+  width: 223px;
+  height: 77px;
+}
+
+.courses-management .text-wrapper-11 {
+  position: absolute;
+  width: 103px;
+  height: 52px;
+  top: 25px;
+  left: 0;
+  font-family: "Inter", Helvetica;
+  font-weight: 800;
+  color: #e44646;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.courses-management .text-wrapper-12 {
+  position: absolute;
+  width: 223px;
+  height: 68px;
+  top: 0;
+  left: 0;
+  font-family: "Inter", Helvetica;
+  font-weight: 800;
+  color: #6cd4e5;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.courses-management .group-10 {
+  position: absolute;
+  width: 357px;
+  height: 239px;
+  top: 229px;
+  left: 113px;
+}

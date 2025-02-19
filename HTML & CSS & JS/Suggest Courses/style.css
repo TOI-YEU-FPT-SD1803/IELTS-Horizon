@@ -1,0 +1,59 @@
+.suggest-courses {
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.suggest-courses .frame-wrapper {
+  width: 286px;
+  height: 231px;
+}
+
+.suggest-courses .frame {
+  height: 231px;
+}
+
+.suggest-courses .overlap-group {
+  position: relative;
+  width: 286px;
+  height: 212px;
+  top: 19px;
+  background-image: url(https://c.animaapp.com/lmezmypR/img/rectangle-35.png);
+  background-size: 100% 100%;
+}
+
+.suggest-courses .cc-kha-hc {
+  position: absolute;
+  width: 102px;
+  height: 15px;
+  top: 19px;
+  left: 83px;
+}
+
+.suggest-courses .expand-arrow {
+  position: absolute;
+  width: 25px;
+  height: 10px;
+  top: 22px;
+  left: 188px;
+}
+
+.suggest-courses .overlap {
+  position: absolute;
+  width: 239px;
+  height: 153px;
+  top: 41px;
+  left: 22px;
+  background-image: url(https://c.animaapp.com/lmezmypR/img/rectangle-36.png);
+  background-size: 100% 100%;
+}
+
+.suggest-courses .group {
+  position: absolute;
+  width: 203px;
+  height: 109px;
+  top: 19px;
+  left: 18px;
+}

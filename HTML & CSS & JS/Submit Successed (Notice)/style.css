@@ -1,0 +1,55 @@
+.submit-successed {
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.submit-successed .overlap-wrapper {
+  overflow: hidden;
+  width: 1125px;
+  height: 694px;
+}
+
+.submit-successed .overlap {
+  width: 1127px;
+  position: relative;
+  height: 694px;
+}
+
+.submit-successed .group {
+  position: absolute;
+  width: 1127px;
+  height: 694px;
+  top: 0;
+  left: 0;
+}
+
+.submit-successed .overlap-group {
+  width: 1125px;
+  background-color: #fffefe;
+  border-radius: var(--shape-corner-small);
+  position: relative;
+  height: 694px;
+}
+
+.submit-successed .text-wrapper {
+  position: absolute;
+  top: 357px;
+  left: 315px;
+  font-family: "Inter-Bold", Helvetica;
+  font-weight: 700;
+  color: #115560;
+  font-size: 64px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.submit-successed .box-important {
+  position: absolute;
+  width: 170px;
+  height: 170px;
+  top: 187px;
+  left: 478px;
+}
